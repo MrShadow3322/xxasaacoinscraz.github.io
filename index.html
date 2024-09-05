@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatCoin Telegram App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>RatCoin Telegram App</h1>
+        </header>
+        <main>
+            <!-- Главная страница -->
+            <div id="home" class="page">
+                <img src="https://i.ibb.co/kgxdGqs/RAAAAAAAAAAAATCuette-of-a-rat-on-xl-1024-v1-0-photoaidcom-cropped.png" alt="RatCoin">
+                <div class="balance" id="balance">Баланс: 0 RatCoin</div>
+            </div>
+
+            <!-- Вкладка Задания -->
+            <div id="tasks" class="page">
+                <h2>Выполните задание</h2>
+                <p>Чтобы получить 1000 RatCoin, подпишитесь на наш канал в Telegram.</p>
+                <button id="subscribeTask">Подписаться и получить 1000 RatCoin</button>
+            </div>
+
+            <!-- Вкладка Airdrop -->
+            <div id="airdrop" class="page">
+                <h2>Привязка кошелька</h2>
+                <p>Добавьте свой кошелек для участия в airdrop.</p>
+                <button id="addWallet">Добавить кошелек</button>
+                <div id="walletOptions" class="hidden">
+                    <button id="telegramWallet">Telegram Wallet</button>
+                    <button id="tonkeeper">Tonkeeper</button>
+                </div>
+                <div id="walletAddress" class="hidden">
+                    <input type="text" id="walletInput" placeholder="Введите адрес кошелька">
+                    <button id="submitWallet">Подтвердить</button>
+                    <p id="walletDisplay" class="hidden">Ваш адрес кошелька: <span id="userWallet"></span></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <button class="nav-button" id="navHome">Главная</button>
+            <button class="nav-button" id="navTasks">Задания</button>
+            <button class="nav-button" id="navAirdrop">Airdrop</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Черный фон */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #111; /* Темно-серый фон */
+    border-bottom: 2px solid #222; /* Темный бордюр */
+}
+
+header h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #ff6600; /* Оранжевый цвет */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    overflow-y: auto;
+    background: #000; /* Черный фон */
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+#home {
+    display: block;
+}
+
+.balance {
+    background: #111; /* Темный фон */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ff6600; /* Оранжевый бордюр */
+}
+
+.balance img {
+    width: 40px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+h2 {
+    color: #ff6600; /* Оранжевый цвет */
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6600; /* Оранжевый бордюр */
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #ccc; /* Светло-серый текст */
+}
+
+button {
+    background-color: #333; /* Темный фон */
+    border: none;
+    color: #fff; /* Белый текст */
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #444; /* Более светлый темный фон */
+    transform: scale(1.05);
+}
+
+#walletAddress {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #444; /* Темный бордюр */
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    background-color: #222; /* Темный фон для ввода */
+    color: #fff; /* Белый текст */
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #111; /* Темный фон */
+    padding: 10px 0;
+    border-top: 2px solid #222; /* Темный бордюр */
+}
+
+.nav-button {
+    background: #333; /* Темный фон */
+    border: none;
+    color: #fff; /* Белый текст */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 14px;
+}
+
+.nav-button:hover {
+    background: #444; /* Более светлый темный фон */
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#walletDisplay {
+    font-size: 16px;
+    color: #fff; /* Белый текст */
+    margin-top: 10px;
+}
+
+#walletDisplay span {
+    color: #ff6600; /* Оранжевый цвет */
+    font-weight: bold;
+}
